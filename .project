@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<projectDescription>
+    <name>alibaba</name>
+    <id>c156149f-1269-470a-9c84-2490d97f0f69</id>
+    <comment></comment>
+    <projects></projects>
+    <buildSpec></buildSpec>
+    <natures>
+        <nature>com.adobe.ide.coldfusion.projectNature</nature>
+    </natures>
+</projectDescription>

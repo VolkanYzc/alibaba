@@ -41,8 +41,6 @@
                 class="form-control me-4">
                 <cfinput id="canliarabutton" type="submit" name="gonder" value="Arama" class="btn btn-success me-4">
                 <a class="btn btn-danger me-4" href="http://127.0.0.1:8500/alibaba/addanimal.cfm" role="button">Ekle</a>              
-                <cfinput type="button" name="import" value="Import"
-                 class="btn btn-warning position-absolute bottom-center end-0">
                  <a class="btn btn-warning position-absolute bottom-center end-0" href="http://127.0.0.1:8500/alibaba/import.cfm" role="button">İmport</a>
             </cfform>
           </div>

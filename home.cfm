@@ -12,34 +12,8 @@
   <body>
     <!--- NavBar Başlangıcı --->
 
-    <nav class="navbar navbar-expand-md bg-light container-md mt-3">
-      
-        <a class="navbar-brand" href="http://127.0.0.1:8500/alibaba/home.cfm">Ali Babanın Çiftliği</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8500/alibaba/home.cfm">Anasayfa</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8500/alibaba/animals.cfm">Canlılar</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8500/alibaba/examination.cfm">Muayeneler</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8500/alibaba/feeding.cfm">Yemleme</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8500/alibaba/milking.cfm">Süt Sağım</a>
-            </li>
-          </ul>
-          <a class="btn btn-primary" href="http://127.0.0.1:8500/alibaba/dashboard.cfm" role="button">Dashboard</a>
-        </div>
-      
-    </nav>
+    <cfinclude  template="./header.cfm">
+    
     <!--- NavBar Bitişi --->
 
      <!--- Slider Başlangıcı --->

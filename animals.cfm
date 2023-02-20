@@ -1,15 +1,12 @@
 <!--- Database ile ilgili verilerin alınması --->
 <CFQUERY NAME="animals_listing" DATASOURCE="alibaba">
-  SELECT id, name, kind, genus, age, lastexaminedate
+  SELECT id, name, kind, genus,sex, age, lastexaminedate
   FROM dbo.Animal
+  <cfif isDefined("form.animal_name")>
+    WHERE name LIKE '%#form.animal_name#%'
+  </cfif>
   ORDER BY name
 </CFQUERY>
-<!--- Database üzerinde sıra no alınması --->
-<cfquery NAME="animals_listing" DATASOURCE="alibaba">
- Select ROW_NUMBER() OVER(order by name) sira, * from Animal
-</cfquery>
-<!--- Database Canlı Arama --->
-
 
 <!doctype html>
 <html lang="en">
@@ -25,34 +22,8 @@
   <body>   
     <!--- NavBar Başlangıcı --->
 
-    <nav class="navbar navbar-expand-md bg-light container-md mt-3">
-      
-        <a class="navbar-brand" href="http://127.0.0.1:8500/alibaba/home.cfm">Ali Babanın Çiftliği</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8500/alibaba/home.cfm">Anasayfa</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8500/alibaba/animals.cfm">Canlılar</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8500/alibaba/examination.cfm">Muayeneler</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8500/alibaba/feeding.cfm">Yemleme</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8500/alibaba/milking.cfm">Süt Sağım</a>
-            </li>
-          </ul>
-          <a class="btn btn-primary" href="http://127.0.0.1:8500/alibaba/dashboard.cfm" role="button">Dashboard</a>
-        </div>
-      
-    </nav>
+    <cfinclude  template="./header.cfm">
+    
     <!--- NavBar Bitişi --->
 
 
@@ -65,14 +36,14 @@
           <div class="container-fluid">
             <CFFORM ACTION="animals.cfm" METHOD="post" format="HTML" class="d-flex">
               <CFINPUT TYPE="Text"
-                NAME="name"
+                NAME="animal_name"
                 MESSAGE="Canlı ismi giriniz"
-                REQUIRED="Yes"
                 class="form-control me-4">
-                <cfinput id="canliarabutton" type="submit" name="gonder" value="Arama" class="btn btn-success me-4" >
+                <cfinput id="canliarabutton" type="submit" name="gonder" value="Arama" class="btn btn-success me-4">
                 <a class="btn btn-danger me-4" href="http://127.0.0.1:8500/alibaba/addanimal.cfm" role="button">Ekle</a>              
                 <cfinput type="button" name="import" value="Import"
                  class="btn btn-warning position-absolute bottom-center end-0">
+                 <a class="btn btn-warning position-absolute bottom-center end-0" href="http://127.0.0.1:8500/alibaba/import.cfm" role="button">İmport</a>
             </cfform>
           </div>
           </nav>  
@@ -93,17 +64,19 @@
                     <th scope="col">Canlı Türü</th>
                     <th scope="col">Canlı Cinsi</th>
                     <th scope="col">Canlı Yaşı</th>
+                    <th scope="col">Canlı Cinsiyet</th>
                     <th scope="col">Son Muayene Tarihi</th>
                </tr> 
             </thead>             
                 <CFOUTPUT QUERY="animals_listing" GROUP="id">
                 <CFOUTPUT>
             <TR>
-                <th>#sira#</th>
+                <th>#currentrow#</th>
                 <td>#name#</td>
                 <TD>#kind#</TD>
                 <TD>#genus#</TD>
                 <TD>#age#</TD>
+                <TD>#sex#</TD>
                 <TD>#lastexaminedate#</TD>
             </TR>
                 </CFOUTPUT>
@@ -113,9 +86,7 @@
 
 
         <!--- Canlılar Liste Bitişi --->
-
-
-
+              
 
 </body>
 </html>

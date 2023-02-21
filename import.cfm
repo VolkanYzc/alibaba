@@ -6,25 +6,16 @@
     method="post">
         <br><br>
     <label>İmport Dosyası Yükleme</label><br><br>
+          <!--- Örnek import dosyası aynı isimle olduğu için ayrı klasörde tutuluyor --->
+          <label>Örnek İmport Dosyası</label>
+          <a href="import exp file\alibaba_import.xlsx" download>İndir</a><br><br>
     <div class="mb-3 col-3">
         <label for="formFile" class="form-label">İmport dosyasını ekleyiniz</label>
-        <!--- <input class="form-control" type="file" id="formFile"> --->
         <input class="form-control" id="formFile" type="file" name="alibaba_import.xlsx" />
       </div>
-      <label>Örnek İmport Dosyası</label>
-
-      <br><br>
-
 
     <br><br> <cfinput id="" type="submit" name="kaydet" value="Kaydet"
                  class="btn btn-success me-4">
     </cfform>
-
-<!---     <cfform name=""  action="uploadfileaction.cfm"
-    enctype="multipart/form-data"
-    method="post">
-<input type="file" name="alibaba_import.xlsx" />
-
-<cfinput  type="submit" name="yukle" value="Yükle"class="btn btn-success me-4"> --->
 
 </div>

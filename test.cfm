@@ -81,15 +81,9 @@
             </div>
         </nav>
         <!--- NavBar Bitişi --->
-        <cfspreadsheet action="read" 
-        src="alibaba_import.xlsx"  query="myQuery">
-        <cfdump  var="#myQuery#">
-    
-        <cfspreadsheet  action="read" src="alibaba_import.xlsx" 
-         sheet="1" rows="2" columns="1,2,3,4,5,6" query="myVar">
-        <cfdump  var="#myVar#">
 
-        
+    
+
     </body>
 </html>
 

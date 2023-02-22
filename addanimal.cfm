@@ -54,7 +54,7 @@
                         <br>
                         <div class="col-md">
                             <div class="form-floating">
-                                <select name="animal_kind" class="form-select" 
+                                <cfselect name="animal_kind" class="form-select" 
                                         id="floatingSelectGrid">
                                     <option selected>
                                         Listeden Seçiniz
@@ -74,7 +74,7 @@
                                     <option value="Kedi">
                                         Kedi
                                     </option>
-                                </select>
+                                </cfselect>
                                 <label for="floatingSelectGrid">
                                     Canlı Türü
                                 </label>

@@ -20,18 +20,21 @@ method="post">
   #myVar.col_3#
   #myVar.col_4#
   #myVar.col_5#
+  #myVar.col_6#
 </cfoutput>
 
 <!--- Tutulan Veriyi Database'e kaydeymek için --->
 <cfquery datasource="alibaba" name="myVar">
     <cfloop query="myVar">
-        INSERT INTO dbo.Animal (name, kind, genus, age, sex)
+        INSERT INTO dbo.Animal (name, kind, genus, age, sex, lastexaminedate)
         VALUES
         ('#myVar.col_1#',
         '#myVar.col_2#',
         '#myVar.col_3#',
         '#myVar.col_4#',
-        '#myVar.col_5#') 
+        '#myVar.col_5#',
+        '#myVar.col_6#'
+        ) 
     </cfloop>    
 </cfquery>
 

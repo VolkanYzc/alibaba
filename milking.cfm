@@ -1,4 +1,13 @@
+
+
+
+
+
+
+<!--- --------------------------------------------------------------------------- --->
 <cfinclude  template="./header.cfm">
+
+
 
 <CFQUERY NAME="animals_kind_listing" DATASOURCE="alibaba">
     SELECT id, name, kind, genus, sex, milk 
@@ -18,8 +27,7 @@
                 <th scope="col">Canlı Cinsi</th>
                 <th scope="col">Canlı Cinsiyet</th>
                 <th scope="col">Toplam Sağım Miktarı</th>
-                <th>Miktar Girin</th>
-                <th>Kaydet</th>
+                <th>Sağım Miktarı Ekle</th>
  
            </tr> 
         </thead>             
@@ -32,14 +40,7 @@
             <TD>#genus#</TD>
             <TD>#sex#</TD>
             <TD>#milk#</TD>
-            <td>
-                <div class="col-5">
-                 <input type="text" name="animal_milking" class="form-control" 
-                id="floatingInputGrid">
-            </div>
-        </td>
-            <td><cfinput id="animal_milk" type="submit" name="ekle" value="+"
-                class="btn btn-success me-4"></td>
+            <td><a href="inanimal.cfm?id=#animals_kind_listing.id#" class="btn btn-success">+</a></td>
         </TR>
             </CFOUTPUT>
             </CFOUTPUT>

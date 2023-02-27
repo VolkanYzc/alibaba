@@ -75,7 +75,8 @@
                 <TD>#genus#</TD>
                 <TD>#age#</TD>
                 <TD>#sex#</TD>
-                <TD>#lastexaminedate#</TD>
+                <!--- lsdatetimeformat ile tarih formatı düzenlendi. --->
+                <TD>#lsDateTimeFormat(lastexaminedate,"dd.mm.yyyy")#</TD>
             </TR>
                 </CFOUTPUT>
                 </CFOUTPUT>

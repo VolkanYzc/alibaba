@@ -1,4 +1,4 @@
-<CFQUERY NAME="animal_milking" DATASOURCE="alibaba">
+<CFQUERY NAME="animal_milking" DATASOURCE="alibaba">   
     INSERT INTO dbo.Animal (milk) 
     VALUES
     ('#form.animal_milking#')

@@ -5,9 +5,7 @@ destination="C:\ColdFusion2021\cfusion\wwwroot\alibaba"
 nameConflict="overwrite"
 fileField="Form.alibaba_import.xlsx">
 
-<form action="uploadfileaction.cfm"
-enctype="multipart/form-data"
-method="post">
+
 
 <!--- Excel'den veriyi okumak için --->
 <cfspreadsheet action="read" excludeheaderrow="yes" src="alibaba_import.xlsx" sheet="1"

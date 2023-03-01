@@ -1,5 +1,5 @@
 <!--- <CFQUERY NAME="animal_milk" DATASOURCE="alibaba">   
-    INSERT INTO dbo.Animal (milk) 
+    INSERT INTO dbo.Animal (milk='#form.animal_milk#') WHERE id='#form.milking.id#'
     VALUES
     ('#form.animal_milk#')
 
@@ -8,10 +8,9 @@
 
   <CFQUERY NAME="animal_milk" DATASOURCE="alibaba">   
     UPDATE dbo.Animal SET milk='#form.animal_milk#' WHERE id='#form.milking.id#'
-
-
   </CFQUERY>
   <cflocation  url="milking.cfm" addtoken="no">
+  
 
 
  <!---  update Personel set Isim='Ahmet Şerif' where PersonelID=1 

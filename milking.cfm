@@ -48,12 +48,3 @@
             </TABLE>
         </TABLE>
     </cfform>
-
-    <cfchart>
-        <cfchartseries type="pie">
-        <cfchartdata item="New car sales" value="50000">
-        <cfchartdata item="Used car sales" value="25000">
-        <cfchartdata item="Leasing" value="30000">
-        <cfchartdata item="Service" value="40000">
-        </cfchartseries>
-        </cfchart>

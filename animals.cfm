@@ -91,5 +91,4 @@
 </html>
 
 
-<!--- Canlılar kısmıda arama, ekle ve import dosyaları yapılacak.
-Listeleme en fazla 20 tane gösterecek. Devamında diğer sayfaya geçecek. ---> 
+<!--- Listeleme en fazla 20 tane gösterecek. Devamında diğer sayfaya geçecek. ---> 

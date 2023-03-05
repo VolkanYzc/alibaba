@@ -20,7 +20,7 @@
       </p>
 <cfform  action="inanimal.cfm">
         <TABLE class="table table-striped container-md">
-            <thead class="table-success">                  
+            <thead class="table-info">                  
             <tr>
                 <th scope="col"></th>
                 <th scope="col">Canlı İsmi</th>

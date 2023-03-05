@@ -57,26 +57,26 @@
             <TABLE class="table table-striped container-md">
                 <thead class="table-success">                  
                 <tr>
-                    <th scope="col"></th>
-                    <th scope="col">Canlı İsmi</th>
-                    <th scope="col">Canlı Türü</th>
-                    <th scope="col">Canlı Cinsi</th>
-                    <th scope="col">Canlı Yaşı</th>
-                    <th scope="col">Canlı Cinsiyet</th>
-                    <th scope="col">Son Muayene Tarihi</th>
+                    <th scope="col" style="text-align:center"></th>
+                    <th scope="col" style="text-align:center">Canlı İsmi</th>
+                    <th scope="col" style="text-align:center">Canlı Türü</th>
+                    <th scope="col" style="text-align:center">Canlı Cinsi</th>
+                    <th scope="col" style="text-align:center">Canlı Yaşı</th>
+                    <th scope="col" style="text-align:center">Canlı Cinsiyet</th>
+                    <th scope="col" style="text-align:center">Son Muayene Tarihi</th>
                </tr> 
             </thead>             
                 <CFOUTPUT QUERY="animals_listing" GROUP="id">
                 <CFOUTPUT>
             <TR>
                 <th>#currentrow#</th>
-                <td>#name#</td>
-                <TD>#kind#</TD>
-                <TD>#genus#</TD>
-                <TD>#age#</TD>
-                <TD>#sex#</TD>
+                <td style="text-align:center" >#name#</td>
+                <TD style="text-align:center">#kind#</TD>
+                <TD style="text-align:center">#genus#</TD>
+                <TD style="text-align:center">#age#</TD>
+                <TD style="text-align:center">#sex#</TD>
                 <!--- lsdatetimeformat ile tarih formatı düzenlendi. --->
-                <TD>#lsDateTimeFormat(lastexaminedate,"dd.mm.yyyy")#</TD>
+                <TD style="text-align:center">#lsDateTimeFormat(lastexaminedate,"dd.mm.yyyy")#</TD>
             </TR>
                 </CFOUTPUT>
                 </CFOUTPUT>

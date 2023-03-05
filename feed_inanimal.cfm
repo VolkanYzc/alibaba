@@ -1,7 +1,7 @@
 <cfprocessingdirective pageencoding="utf-8"> <!--- Türkçe karakterler için  --->
 <cfif isDefined("URL.id")>
     <cftry>
-        <cfquery datasource="alibaba" name="milking">
+        <cfquery datasource="alibaba" name="feeding">
             SELECT id, name, kind, genus,sex, age, lastexaminedate, feed
             FROM dbo.Animal
             WHERE id = <cfqueryparam value="#URL.id#" cfsqltype="cf_sql_integer" >
@@ -13,11 +13,11 @@
 
     </cftry>
 <cfelse>
-    <cfset milking = StructNew()>
-    <cfset milking.id = 0>
-    <cfset milking.name = "">
-    <cfset milking.kind = "">
-    <cfset milking.feed = 0>
+    <cfset feeding = StructNew()>
+    <cfset feeding.id = 0>
+    <cfset feeding.name = "">
+    <cfset feeding.kind = "">
+    <cfset feeding.feed = 0>
 </cfif>
 
 
@@ -37,17 +37,17 @@
                 <fieldset class="form-group">
                     <label>Canlı id</label> <input type="label"
                         value="#feeding.id#" class="form-control"
-                        name="milking.id" required="required">
+                        name="feeding.id" required="required">
                 </fieldset>
 
 
                 <fieldset class="form-group">
                     <label>Canlı İsmi</label> <input type="text"
                         value="#feeding.name#" class="form-control"
-                        name="milking_name">
+                        name="feeding_name">
                 </fieldset>
                 <label>Yem Miktarı Giriniz</label>
-                <input type="text" name="animal_milk" class="form-control" 
+                <input type="text" name="feeding.feed" class="form-control" 
                 id="floatingInputGrid">
 
             </cfoutput> 

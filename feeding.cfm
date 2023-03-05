@@ -25,30 +25,30 @@ Yukarıda ki işlemlerin tamamını Hayvanların kendi özel sayfalarında yapı
         <p class="fs-3 container-md">
           Yemleme 
       </p>
-<cfform  action="feed_inanimal.cfm">
+<cfform action="feed_inanimal.cfm">
         <TABLE class="table table-striped container-md">
             <thead class="table-warning">                  
             <tr>
                 <th scope="col"></th>
-                <th scope="col">Canlı İsmi</th>
-                <th scope="col">Canlı Türü</th>
-                <th scope="col">Canlı Cinsi</th>
-                <th scope="col">Canlı Cinsiyet</th>
-                <th scope="col">Toplam Yem Miktarı</th>
-                <th>Yem Miktarı Ekle</th>
+                <th scope="col" style="text-align:center">Canlı İsmi</th>
+                <th scope="col" style="text-align:center">Canlı Türü</th>
+                <th scope="col" style="text-align:center">Canlı Cinsi</th>
+                <th scope="col" style="text-align:center">Canlı Cinsiyet</th>
+                <th scope="col" style="text-align:center">Toplam Yem Miktarı</th>
+                <th scope="col" style="text-align:center">Yem Miktarı Ekle</th>
  
            </tr> 
         </thead>             
             <CFOUTPUT QUERY="animal_feeding" GROUP="id">
             <CFOUTPUT>
         <TR>
-            <th>#currentrow#</th>
-            <td>#name#</td>
-            <TD>#kind#</TD>
-            <TD>#genus#</TD>
-            <TD>#sex#</TD>
-            <TD>#feed# Kg</TD>
-            <td><a href="feed_inanimal.cfm?id=#animal_feeding.id#" class="btn btn-success">+</a></td>
+            <th style="text-align:center">#currentrow#</th>
+            <td style="text-align:center">#name#</td>
+            <TD style="text-align:center">#kind#</TD>
+            <TD style="text-align:center">#genus#</TD>
+            <TD style="text-align:center">#sex#</TD>
+            <TD style="text-align:center">#feed# Kg</TD>
+            <td style="text-align:center"><a href="feed_inanimal.cfm?id=#animal_feeding.id#" class="btn btn-success btn-sm ">+</a></td>
         </TR>
             </CFOUTPUT>
             </CFOUTPUT>

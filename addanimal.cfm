@@ -79,7 +79,7 @@
                         <br>
                         <div class="col-md">
                             <div class="form-floating">
-                                <input type="text" name="animal_milking" class="form-control" 
+                                <input type="text" name="animal_genus" class="form-control" 
                                        id="floatingInputGrid">
                                 <label for="floatingInputGrid">
                                     Canlı Irkı

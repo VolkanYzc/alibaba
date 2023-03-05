@@ -21,13 +21,10 @@
      <div id="carouselExampleIndicators container-md" class="carousel slide mt-3" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="https://thumbs.dreamstime.com/z/organic-farm-landscape-wheat-field-village-houses-windmill-barn-fence-agriculture-rural-illustration-cartoon-flat-style-190462537.jpg" class="d-block w-100" alt="ilk görsel">
+          <img src="https://thumbs.dreamstime.com/b/countryside-rural-background-happy-village-family-livestock-barn-green-meadow-organic-farming-illustration-cowboy-woman-191317080.jpg" class="d-block w-100" alt="ilk görsel">
         </div>
         <div class="carousel-item">
-          <img src="https://via.placeholder.com/800x300" class="d-block w-100" alt="ikinci görsel">
-        </div>
-        <div class="carousel-item">
-          <img src="https://via.placeholder.com/800x300" class="d-block w-100" alt="üçüncü görsel">
+          <img src="https://grandprairiefoods.com/wp-content/uploads/2019/10/GPF_Farm-to-Table-Blog.jpg" class="d-block w-100" alt="ikinci görsel">
         </div>
       </div>
     </div>

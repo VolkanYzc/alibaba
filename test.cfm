@@ -89,3 +89,8 @@
 
 <!--- Canlılar kısmıda arama, ekle ve import dosyaları yapılacak.
 Listeleme en fazla 20 tane gösterecek. Devamında diğer sayfaya geçecek. --->
+
+<div>   
+    <a class="btn btn-primary" href="http://127.0.0.1:8500/alibaba/milking.cfm">Süt Sağma Sayfasına Git</a>
+    <input class="btn btn-primary type="button">?</input>
+</div>

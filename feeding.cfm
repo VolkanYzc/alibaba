@@ -27,7 +27,7 @@ Yukarıda ki işlemlerin tamamını Hayvanların kendi özel sayfalarında yapı
       </p>
 <cfform  action="feed_inanimal.cfm">
         <TABLE class="table table-striped container-md">
-            <thead class="table-success">                  
+            <thead class="table-warning">                  
             <tr>
                 <th scope="col"></th>
                 <th scope="col">Canlı İsmi</th>

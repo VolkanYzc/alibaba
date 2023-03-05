@@ -16,28 +16,28 @@
       </p>
 <cfform  action="inanimal.cfm">
         <TABLE class="table table-striped container-md">
-            <thead class="table-info">                  
+            <thead class="table-primary">                  
             <tr>
                 <th scope="col"></th>
-                <th scope="col">Canlı İsmi</th>
-                <th scope="col">Canlı Türü</th>
-                <th scope="col">Canlı Cinsi</th>
-                <th scope="col">Canlı Cinsiyet</th>
-                <th scope="col">Toplam Sağım Miktarı</th>
-                <th>Sağım Miktarı Ekle</th>
+                <th scope="col" style="text-align:center">Canlı İsmi</th>
+                <th scope="col" style="text-align:center">Canlı Türü</th>
+                <th scope="col" style="text-align:center">Canlı Cinsi</th>
+                <th scope="col" style="text-align:center">Canlı Cinsiyet</th>
+                <th scope="col" style="text-align:center">Toplam Sağım Miktarı</th>
+                <th style="text-align:center">Sağım Miktarı Ekle</th>
  
            </tr> 
         </thead>             
             <CFOUTPUT QUERY="animal_milking" GROUP="id">
             <CFOUTPUT>
         <TR>
-            <th>#currentrow#</th>
-            <td>#name#</td>
-            <TD>#kind#</TD>
-            <TD>#genus#</TD>
-            <TD>#sex#</TD>
-            <TD>#milk# Litre</TD>
-            <td><a href="inanimal.cfm?id=#animal_milking.id#" class="btn btn-success">+</a></td>
+            <th style="text-align:center">#currentrow#</th>
+            <td style="text-align:center">#name#</td>
+            <TD style="text-align:center">#kind#</TD>
+            <TD style="text-align:center">#genus#</TD>
+            <TD style="text-align:center">#sex#</TD>
+            <TD style="text-align:center">#milk# Litre</TD>
+            <td style="text-align:center"><a href="inanimal.cfm?id=#animal_milking.id#" class="btn btn-success btn-sm">+</a></td>
         </TR>
             </CFOUTPUT>
             </CFOUTPUT>

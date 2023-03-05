@@ -25,7 +25,7 @@ Yukarıda ki işlemlerin tamamını Hayvanların kendi özel sayfalarında yapı
         <p class="fs-3 container-md">
           Yemleme 
       </p>
-<cfform  action="inanimal.cfm">
+<cfform  action="feed_inanimal.cfm">
         <TABLE class="table table-striped container-md">
             <thead class="table-success">                  
             <tr>
@@ -48,7 +48,7 @@ Yukarıda ki işlemlerin tamamını Hayvanların kendi özel sayfalarında yapı
             <TD>#genus#</TD>
             <TD>#sex#</TD>
             <TD>#feed# Kg</TD>
-            <td><a href="inanimal.cfm?id=#animal_feeding.id#" class="btn btn-success">+</a></td>
+            <td><a href="feed_inanimal.cfm?id=#animal_feeding.id#" class="btn btn-success">+</a></td>
         </TR>
             </CFOUTPUT>
             </CFOUTPUT>
